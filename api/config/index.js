@@ -6,11 +6,11 @@ dotenv.config({});
 
 export default {
   database: {
-    uri: 'mongodb+srv://root1:root1@cluster0.qmeg72g.mongodb.net',
-    // uri: 'mongodb://localhost:27017',
+    uri: process.env.DB_URI ,
+
     name: 'ecomerce',
   },
   token: {
-    secret: '1234567890sdfghjkl',
+    secret: process.env.SIC,
   },
 };
